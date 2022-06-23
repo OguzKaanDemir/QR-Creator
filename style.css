@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background-color: rgb(250, 242, 231);
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}

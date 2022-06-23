@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Made By Kaan Demir-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaan Demir QR Creator</title>
+    <script type="text/javascript" src="qr.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="canvas"></div>
+
+<center>
+<hr style="width: 500px;">
+<div>
+<br>
+    <form runat="server">
+        <i>Select Image: </i>
+        <input accept="image/*" type='file' id="imgInp" />
+    </form>
+    
+    <br>
+    
+    <i>Your Link: </i>
+    
+        <textarea id="link"rows="1" cols="30" placeholder="Your Link Here..."></textarea>
+    
+    <br><br>
+    
+    <i>Styles: </i>
+        <select id="types" onChange="update()">
+            <option value="">rounded</option>
+            <option value="">classy</option>
+            <option value="">classy-rounded</option>
+            <option value="">extra-rounded</option>
+            <option value="">square</option>
+        </select>
+    
+        <i>----  Color: </i>
+        <input type="color" id="colorpicker" value="#0">
+    <br><br>
+    <button id="btn">Create QR</button>
+    <br>
+    <div id="a">
+        <br>
+    </div>
+</div>
+<hr style="width: 500px;">
+</center>
+<script src="js.js"></script>
+</body>
+<!-- Made By Kaan Demir-->
+</html>
